@@ -13,14 +13,18 @@
 <body>
     <main>
         <form id="my_Form" action="">
-            <input id="kilometers" type="text" placeholder="Kilometri da percorrere">
-            <input id="age" type="text" placeholder="Età">
-            <button id="my_Button">CALCOLA</button>
+            <input id="data" type="text" placeholder="Inserisci Nome e Cognome" required>
+            <input id="kilometers" type="text" placeholder="Kilometri da percorrere" required>
+            <input id="age" type="text" placeholder="Età" required>
+            <button id="calculate_Button">CALCOLA</button>
+            <button id="undo_Button">ANNULLA</button>
         </form>
 
+        <span id="user_Data"></span>
+        <span id="ticket_Type"></span>
+        <span id="carriage_Number"></span>
+        <span id="train_Number"></span>
         <span id="user_TicketCost"></span>
-        <span id="user_Age"></span>
-        <span id="user_Km"></span>
     </main>
 
     <script src="js/script.js"></script>
