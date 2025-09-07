@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcola il tuo biglietto</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
-        <form id="my_Form" action="">
-            <input id="data" type="text" placeholder="Inserisci Nome e Cognome" required>
-            <input id="kilometers" type="text" placeholder="Kilometri da percorrere" required>
-            <input id="age" type="text" placeholder="Età" required>
-            <button id="calculate_Button">CALCOLA</button>
-            <button id="undo_Button">ANNULLA</button>
-        </form>
+        <div class="container">
+            <div class="my-card">
+                <form id="my_Form" action="">
+                    <label for="data">Nome e Cognome</label>
+                    <input id="data" type="text" required>
+
+                    <label for="kilometers">Distanza da percorrere (in KM)</label>
+                    <input id="kilometers" type="text" required>
+
+                    <label for="age">Età</label>
+                    <input id="age" type="text" placeholder="Età" required>
+
+                    <button id="calculate_Button">CALCOLA</button>
+                    <button id="undo_Button">ANNULLA</button>
+                </form>
+            </div>
+        </div>
 
         <span id="user_Data"></span>
         <span id="ticket_Type"></span>

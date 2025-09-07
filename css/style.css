@@ -11,7 +11,8 @@ body {
     background-color: #531842;
 }
 
-.container {
-    margin: 0 auto;
-    width: 50%;
+/* Card */
+.my-card {
+    background-color: #b81450;
+    border-radius: 10px;
 }
