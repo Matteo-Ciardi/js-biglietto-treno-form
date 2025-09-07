@@ -11,8 +11,26 @@ body {
     background-color: #531842;
 }
 
+input {
+    padding: 5px;
+}
+
 /* Card */
 .my-card {
     background-color: #b81450;
     border-radius: 10px;
+    padding: 30px 50px;
+}
+
+.my-card-top {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin-bottom: 40px;
+}
+
+.my-card-bottom {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 50px;
 }
