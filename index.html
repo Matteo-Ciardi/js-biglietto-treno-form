@@ -45,22 +45,44 @@
 
                         <div class="row">
                             <div class="buttons">
-                                <button type="button" class="btn btn-outline-primary"
+                                <button type="submit" class="btn btn-outline-primary"
                                     id="calculate_Button">CALCOLA</button>
-                                <button type="button" class="btn btn-outline-danger" id="undo_Button">ANNULLA</button>
+                                <button type="submit" class="btn btn-outline-danger" id="undo_Button">ANNULLA</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
                 <div class="my-card-bottom">
+
                     <h3>IL TUO BIGLIETTO</h3>
 
-                    <span id="user_Data"></span>
-                    <span id="ticket_Type"></span>
-                    <span id="carriage_Number"></span>
-                    <span id="train_Number"></span>
-                    <span id="user_TicketCost"></span>
+                    <div class="my-row">
+                        <div class="my-user-data my-frame">
+                            <span class="cat-title">DATI PASSEGGERO</span>
+                            <span id="user_Data"></span>
+                        </div>
+
+                        <div class="my-ticket-type my-frame">
+                            <span class="cat-title">TIPO DI BIGLIETTO</span>
+                            <span id="ticket_Type"></span>
+                        </div>
+
+                        <div class="my-carriage-number my-frame">
+                            <span class="cat-title">CARROZZA</span>
+                            <span id="carriage_Number"></span>
+                        </div>
+
+                        <div class="my-train-number my-frame">
+                            <span class="cat-title">CODICE CP</span>
+                            <span id="train_Number"></span>
+                        </div>
+
+                        <div class="my-ticket-cost my-frame">
+                            <span class="cat-title">PREZZO TOTALE</span>
+                            <span id="user_TicketCost"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
