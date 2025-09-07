@@ -17,36 +17,44 @@
 <body>
     <main>
         <div class="container">
+
             <div class="my-card">
+
                 <div class="my-card-top">
+                    <h3>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
+
                     <form id="my_Form" action="">
+
                         <div class="row">
-                            <div class="form-floating mb-3 col-3">
+                            <div class="form-floating mb-3 col-4">
                                 <input type="text" class="form-control" id="data" placeholder="Nome e Cognome" required>
                                 <label for="data">Nome e Cognome</label>
                             </div>
 
-                            <div class="form-floating mb-3 col-3">
+                            <div class="form-floating mb-3 col-4">
                                 <input type="text" class="form-control" id="kilometers"
                                     placeholder="Distanza da percorrere" required>
                                 <label for="kilometers">Distanza da percorrere (in KM)</label>
                             </div>
 
-                            <div class="form-floating mb-3 col-3">
+                            <div class="form-floating mb-3 col-4">
                                 <input type="text" class="form-control" id="age" placeholder="Età" required>
                                 <label for="age">Età</label>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="buttons">
-                                <button id="calculate_Button">CALCOLA</button>
-                                <button id="undo_Button">ANNULLA</button>
+                                <button type="button" class="btn btn-outline-primary"
+                                    id="calculate_Button">CALCOLA</button>
+                                <button type="button" class="btn btn-outline-danger" id="undo_Button">ANNULLA</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
                 <div class="my-card-bottom">
+                    <h3>IL TUO BIGLIETTO</h3>
 
                     <span id="user_Data"></span>
                     <span id="ticket_Type"></span>
